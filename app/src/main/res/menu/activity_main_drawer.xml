@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Know About Your Location" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/history"
+            android:title="Posts" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/status"
+            android:title="Current Shipping Status" />
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/status"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Responses From Driver" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Refer a Friend" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

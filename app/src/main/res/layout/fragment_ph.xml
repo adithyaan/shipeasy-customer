@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/t2"
+
+    tools:context="com.example.adithyaan.deloitee.Activities.SignInActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:id="@+id/one"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:id="@+id/et_ph_num"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:hint="Enter Your Phone Number"
+            android:layout_height="60dp" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:textStyle="bold"
+            android:id="@+id/proceed_tv"
+            android:layout_gravity="center"
+            android:text="Get OTP"
+            android:drawableLeft="@drawable/proceed_arrow"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation= "vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/two"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:id="@+id/et_otp"
+            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:hint="Enter OTP"
+            android:layout_height="60dp" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:textStyle="bold"
+            android:id="@+id/submit_otp"
+            android:layout_gravity="center"
+            android:text="Submit Otp"
+            android:drawableLeft="@drawable/proceed_arrow"
+            />
+
+
+    </LinearLayout>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:text="SKIP"
+    android:textStyle="bold"
+    android:id="@+id/skip"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="18sp"
+    android:layout_marginBottom="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    />
+
+</RelativeLayout>
